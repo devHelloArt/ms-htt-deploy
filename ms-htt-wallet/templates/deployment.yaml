@@ -45,6 +45,18 @@ spec:
                   key: {{ .Values.MYSQLSecretKey | quote }}
             - name: MYSQL_DATABASE
               value: {{ .Values.MYSQL_DATABASE | quote }}
+
+            - name : KAS_ACCESSKEY
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.KAS_AccessKeyName | quote }}
+                  key: {{ .Values.KAS_AccessKey | quote }}
+                  
+            - name : KAS_ACCESSSECRET
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.KAS_AccessSecrectKeyName | quote }}
+                  key: {{ .Values.KAS_AccessSecrectKey | quote }}
           ports:
             - name: http
               containerPort: 5502
