@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "ms-htt-users.fullname" . }}-test-connection"
+  labels:
+    {{- include "ms-htt-users.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "ms-htt-users.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

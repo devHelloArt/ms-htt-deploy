@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "ms-htt-wallet.fullname" . }}
+  labels:
+    {{- include "ms-htt-wallet.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+    - port: {{ .Values.service.socket_port }}
+      targetPort: socket
+      protocol: TCP
+      name: socket
+  selector:
+    {{- include "ms-htt-wallet.selectorLabels" . | nindent 4 }}
