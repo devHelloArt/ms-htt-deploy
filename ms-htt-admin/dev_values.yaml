@@ -8,14 +8,17 @@ image:
   repository: devhtt/ms-htt-admin
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: "sha-8fa299f"
 
 MYSQL_HOST: rds.sandbox.htt-dev-vpc.com
 MYSQL_USER: htt_client
 MYSQL_DATABASE: htt_client_db
 MYSQLSecretName: mysql
 MYSQLSecretKey: password
-              
+
+NodeEnvValue: dev
+DebugValue: true
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""

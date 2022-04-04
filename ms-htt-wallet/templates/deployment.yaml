@@ -57,6 +57,8 @@ spec:
                 secretKeyRef: 
                   name: {{ .Values.KAS_AccessSecrectKeyName | quote }}
                   key: {{ .Values.KAS_AccessSecrectKey | quote }}
+            - name: NODE_ENV
+              value: {{ .Values.NodeEnvValue | quote }}
           ports:
             - name: http
               containerPort: 5502

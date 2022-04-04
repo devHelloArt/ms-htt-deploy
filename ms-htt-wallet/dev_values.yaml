@@ -8,7 +8,7 @@ image:
   repository: devhtt/ms-htt-wallet
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "devNighthly"
+  tag: "sha-03bec45"
  
 MYSQL_HOST: rds.sandbox.htt-dev-vpc.com
 MYSQL_USER: htt_client
@@ -21,6 +21,8 @@ KAS_AccessKey : kaskeyvluae
 
 KAS_AccessSecrectKeyName : kaskeysecret
 KAS_AccessSecrectKey : kaskeyvaluesecret
+
+NodeEnvValue: dev
 
 imagePullSecrets: []
 nameOverride: ""

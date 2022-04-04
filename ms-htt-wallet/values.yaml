@@ -22,6 +22,8 @@ KAS_AccessKey : kaskeyvluae
 KAS_AccessSecrectKeyName : kaskeysecret
 KAS_AccessSecrectKey : kaskeyvaluesecret
 
+NodeEnvValue: production
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""

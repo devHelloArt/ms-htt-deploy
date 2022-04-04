@@ -45,6 +45,10 @@ spec:
                   key: {{ .Values.MYSQLSecretKey | quote }}
             - name: MYSQL_DATABASE
               value: {{ .Values.MYSQL_DATABASE | quote }}
+            - name: NODE_ENV
+              value: {{ .Values.NodeEnvValue | quote }}
+            - name: DEBUG
+              value: {{ .Values.DebugValue | quote }}
           ports:
             - name: http
               containerPort: 5005
