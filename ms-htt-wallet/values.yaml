@@ -22,6 +22,12 @@ KAS_AccessKey : kaskeyvluae
 KAS_AccessSecrectKeyName : kaskeysecret
 KAS_AccessSecrectKey : kaskeyvaluesecret
 
+OWNER_PRIV_KeyName : ownerkeysecret
+OWNER_PRIV_Key : ownerkeysecretvalue
+
+FEE_DELEGATE_PRIVE_KeyName : feepayerkeysecret
+FEE_DELEGATE_PRIVE_Key : feepayerkeysecretvalue
+
 NodeEnvValue: production
 
 imagePullSecrets: []

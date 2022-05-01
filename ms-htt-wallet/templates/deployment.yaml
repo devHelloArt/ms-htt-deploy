@@ -57,6 +57,19 @@ spec:
                 secretKeyRef: 
                   name: {{ .Values.KAS_AccessSecrectKeyName | quote }}
                   key: {{ .Values.KAS_AccessSecrectKey | quote }}
+
+            - name : OWNER_PRIV_KEY
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.OWNER_PRIV_KeyName | quote }}
+                  key: {{ .Values.OWNER_PRIV_Key | quote }}
+                  
+            - name : FEE_DELEGATE_PRIV_KEY
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.FEE_DELEGATE_PRIVE_KeyName | quote }}
+                  key: {{ .Values.FEE_DELEGATE_PRIVE_Key | quote }}
+
             - name: NODE_ENV
               value: {{ .Values.NodeEnvValue | quote }}
           ports:

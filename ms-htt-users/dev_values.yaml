@@ -8,7 +8,7 @@ image:
   repository: devhtt/ms-htt-users
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "sha-7589fdd"
+  tag: "sha-ab460ab"
 
 MYSQL_HOST: rds.sandbox.htt-dev-vpc.com
 MYSQL_USER: htt_client
@@ -20,6 +20,12 @@ JWTSecretName: jwtkey
 JWTSecrectKey: jwtkeyvalue
 COOKIESecretName: cookiekey
 COOKIESecretKey: cookiekeyvalue
+
+OWNER_PRIV_KeyName : ownerkeysecret
+OWNER_PRIV_Key : ownerkeysecretvalue
+
+FEE_DELEGATE_PRIVE_KeyName : feepayerkeysecret
+FEE_DELEGATE_PRIVE_Key : feepayerkeysecretvalue
 
 NodeEnvValue: dev
 
