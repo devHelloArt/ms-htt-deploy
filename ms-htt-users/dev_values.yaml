@@ -8,7 +8,7 @@ image:
   repository: devhtt/ms-htt-users
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "sha-82be91f"
+  tag: "sha-f58a2dd"
 
 MYSQL_HOST: rds.sandbox.htt-dev-vpc.com
 MYSQL_USER: htt_client
