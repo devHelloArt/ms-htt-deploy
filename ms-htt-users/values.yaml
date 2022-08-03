@@ -22,6 +22,30 @@ COOKIESecretName: cookiekey
 COOKIESecretKey: cookiekeyvalue
 
 NodeEnvValue: production
+  
+ADMINPWName: adminpwname
+ADMINPWValue: adminpwvalue
+
+SECRETKEYRAWName: secretkerawyname
+SECRETKEYRAWValue : secretkeyrawvalue
+
+FirebaseSecretName: firebasesecrectkey
+FirebaseSecretKey: firebasesecrectvalue
+
+FirbaseProjectIdName: firebaseprojectidkey
+FirbaseProjectIdKey: firebaseprojectidvalue
+
+FirbasePrivateKeyIdName: firebaseprivatekeyidkey
+FirbasePrivateKeyIdKey: firebaseprivatekeyidvalue
+
+FirbasePrivateKeyName: firebaseprivatekeykey
+FirbasePrivateKeyKey: firebaseprivatekeyvalue
+
+FirbaseClientIdName: firebaseclientidkey
+FirbaseClientIdKey: firebaseclientidvalue
+
+FirbaseClientEmailName: firebaseclientemailkey
+FirbaseClientEmailKey: firebaseclientemailvalue
 
 imagePullSecrets: []
 nameOverride: ""

@@ -72,6 +72,36 @@ spec:
 
             - name: NODE_ENV
               value: {{ .Values.NodeEnvValue | quote }}
+
+            - name : ADMINPW
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.ADMINPWName | quote }}
+                  key: {{ .Values.ADMINPWValue | quote }}
+
+            - name : SECRETKEY
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.SECRETKEYName | quote }}
+                  key: {{ .Values.SECRETKEYValue | quote }}
+
+            - name : OPERATOR
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.OPERATORName | quote }}
+                  key: {{ .Values.OPERATORValue | quote }}
+
+            - name : SECRETKEYRAW
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.SECRETKEYRAWName | quote }}
+                  key: {{ .Values.SECRETKEYRAWValue | quote }}
+                  
+            - name : ADMINPWRAW
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.ADMINPWRAWName | quote }}
+                  key: {{ .Values.ADMINPWRAWValue | quote }}
           ports:
             - name: http
               containerPort: 5502

@@ -15,7 +15,10 @@ MYSQL_USER: htt_client
 MYSQL_DATABASE: htt_client_db
 MYSQLSecretName: mysql
 MYSQLSecretKey: password
-              
+
+FirebaseSecretName: firebasesecrectkey
+FirebaseSecretKey: firebasesecrectvalue
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""

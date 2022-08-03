@@ -28,7 +28,22 @@ OWNER_PRIV_Key : ownerkeysecretvalue
 FEE_DELEGATE_PRIVE_KeyName : feepayerkeysecret
 FEE_DELEGATE_PRIVE_Key : feepayerkeysecretvalue
 
+ADMINPWName: adminpwname
+ADMINPWValue: adminpwvalue
+
 NodeEnvValue: production
+
+OPERATORName: operatorname
+OPERATORValue : operatorvalue
+
+SECRETKEYName: secretkeyname
+SECRETKEYValue : secretkeyvalue
+
+SECRETKEYRAWName: secretkerawyname
+SECRETKEYRAWValue : secretkeyrawvalue
+
+ADMINPWRAWName : adminkeyname
+ADMINPWRAWValue : adminkeyvalue
 
 imagePullSecrets: []
 nameOverride: ""
