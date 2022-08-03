@@ -8,7 +8,7 @@ image:
   repository: devhtt/ms-htt-wallet
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v0.0.8"
+  tag: "v0.1.0"
 
 MYSQL_HOST: rds.staging.htt-staging-vpc.com
 MYSQL_USER: htt_client
